@@ -1,18 +1,5 @@
-import 'package:flutter/material.dart';
-
-class app_colors {
-  static const Color primary = Color(0xFF10B981);
-  static const Color secondary = Color(0xFF3B82F6);
-  static const Color accent = Color(0xFFF59E0B);
-  static const Color background = Color(0xFFF0FDF4);
-  static const Color surface = Colors.white;
-  static const Color error = Color(0xFFEF4444);
-  static const Color text_primary = Color(0xFF111827);
-  static const Color text_secondary = Color(0xFF6B7280);
-}
-
-class app_constants {
-  static const List<String> categories = [
+class app_categories {
+  static const List<String> all_categories = [
     '子どもの健康',
     '保活・幼稚園・保育園',
     '行政手続き・助成金',
@@ -24,62 +11,41 @@ class app_constants {
     '不用品譲り合い',
   ];
 
-  static const List<String> interests = [
-    '公園巡り',
-    '離乳食',
-    '保活',
+  static const List<String> hakken_categories = [
+    '子どもの健康',
+    '保活・幼稚園・保育園',
+    '行政手続き・助成金',
+    '遊び場・お出かけ',
+    '地域のお店・サービス',
     '習い事',
-    'ママ友探し',
-    'ベビー用品',
-    '絵本',
-    '行政手続き',
-    '防災',
-    '健康',
-    '地域イベント',
-    '幼稚園情報',
-    '小児科',
-    '予防接種',
-    '発達相談',
-    '学童保育',
-    '中学受験',
-    '部活動',
+    '妊娠・出産',
+    '暮らし・その他',
   ];
 
-  static const List<String> child_age_ranges = [
-    '0歳',
-    '1-3歳',
-    '4-6歳',
-    '小学生',
-    '中学生',
-    '高校生',
+  static const List<String> shitsumon_categories = [
+    '子どもの健康',
+    '保活・幼稚園・保育園',
+    '行政手続き・助成金',
+    '遊び場・お出かけ',
+    '地域のお店・サービス',
+    '習い事',
+    '妊娠・出産',
+    '暮らし・その他',
+    '不用品譲り合い',
   ];
-}
 
-class app_text_styles {
-  static const TextStyle heading1 = TextStyle(
-    fontSize: 24,
-    fontWeight: FontWeight.bold,
-    color: app_colors.text_primary,
-  );
-
-  static const TextStyle heading2 = TextStyle(
-    fontSize: 20,
-    fontWeight: FontWeight.bold,
-    color: app_colors.text_primary,
-  );
-
-  static const TextStyle body1 = TextStyle(
-    fontSize: 16,
-    color: app_colors.text_primary,
-  );
-
-  static const TextStyle body2 = TextStyle(
-    fontSize: 14,
-    color: app_colors.text_secondary,
-  );
-
-  static const TextStyle caption = TextStyle(
-    fontSize: 12,
-    color: app_colors.text_secondary,
-  );
+  // 不用品譲り合い用の定数
+  static const List<String> item_types = ['あげます', 'ください'];
+  
+  static const List<String> handover_methods = [
+    '直接手渡し',
+    '玄関先に置く',
+    '指定場所に置く',
+  ];
+  
+  static const List<String> yuzuriai_statuses = [
+    '募集中',
+    '取引中',
+    '終了',
+  ];
 }
